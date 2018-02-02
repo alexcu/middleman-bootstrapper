@@ -1,6 +1,10 @@
 # Middleman Project Bootstrapper Website
 
-A bootstrapper for generating basic, static Middleman websites
+A bootstrapper for generating basic, static Middleman websites.
+
+![Sample Website](https://i.imgur.com/OLwEw2G.png)
+
+Demo can be found [here](http://alexcu.github.io/middleman-bootstrapper).
 
 ## Getting started
 
