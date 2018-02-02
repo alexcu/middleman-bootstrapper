@@ -1,8 +1,8 @@
-<ul class="sk-grid">
+<ul class="mp-grid">
   <% blog.tags.keys.each do |tag| %>
     <%= partial 'partials/grid_item', locals: {
       title: tag.to_title_case.to_human_case,
-      description: 'Examples & Guides',
+      description: 'Articles & Guides',
       href: "/articles/guides/tags/#{tag}",
       icon: nil
     } %>

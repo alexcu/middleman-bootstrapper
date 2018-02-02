@@ -3,9 +3,9 @@ a:hover, a:active, a:focus {
 }
 // Color for anchorjs link
 a.anchorjs-link {
-  color: $splashkit-aqua;
+  color: $mp-color-secondary;
   &:hover {
-    color: darken($splashkit-aqua, 20%);
+    color: darken($mp-color-secondary, 20%);
     text-decoration: none;
   }
 }

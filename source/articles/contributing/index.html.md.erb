@@ -1,6 +1,6 @@
-# Writing a SplashKit Guide
+# Writing a Guide for MyProject
 
-This tutorial will cover the details of how to write a SplashKit guide for the SplashKit website.
+This tutorial will cover the details of how to write guide for the MyProject website.
 
 You will need:
 
@@ -10,39 +10,27 @@ You will need:
 
 ## Getting Ready
 
-In order to test your guide in the SplashKit website, you need to download the source code for the website. To do this, make sure you are logged into GitHub, and then [create a fork](http://github.com/splashkit/splashkit.io/fork) of the SplashKit.io website repository onto your own personal GitHub account.
+In order to test your guide in the MyProject website, you need to download the source code for the website. To do this, make sure you are logged into GitHub, and then [create a fork](http://github.com/MyProject/MyProject/fork) of the website repository onto your own personal GitHub account.
 
 Once you have forked the website repository, you should then [clone your fork](https://help.github.com/articles/cloning-a-repository/) of the repository to your local machine by selecting "clone or download" and copying the link. You can do this via the `git clone <link>` command in the terminal, or by using [GitHub Desktop](https://desktop.github.com).
 
-Once you have cloned your forked repository, follow the instructions posted in the website's [readme](https://github.com/splashkit/splashkit.io/blob/master/README.md).
+Once you have cloned your forked repository, follow the instructions posted in the website's [readme](https://github.com/MyProject/MyProject/blob/master/README.md).
 
 ## Creating The Guide
 
 To create a new guide, navigate to the directory where you cloned the repository:
 
 ```
-cd /path/to/splashkit.io
+cd /path/to/MyProject
 ```
 
-Guides are categorised using a _tag_, which must relate to a member in the API group. The following keys can be used to relate your article to a specific API group:
-
-<% data.api.keys.each do |key| %>
-  - **`<%= key %>`**: <%= key.to_human_case %>
-<% end %>
-
-Once you have decided a name for your guide and which API group(s) it should relate, execute the following command:
+Guides are categorised using a _tag_. Once you have decided for one or more tag for your guide, execute the following command:
 
 ```
 bundle exec middleman article "[Name of Guide]" -t [tags]
 ```
 
-You can associate multiple tags to one guide by separating tags using a comma. For example, if you wanted to write a `graphics` and `window`-related guide entitled "Drawing simple shapes", you would execute:
-
-```
-bundle exec middleman article "Drawing simple shapes" -t graphics,window
-```
-
-Once you execute this command, you will see that the guide you have named appears under `source/articles/guides` using the current day's date. For example, the command above would create `source/articles/guides/20XX-XX-XX-drawing-simple-shapes.html.md`.
+Once you execute this command, you will see that the guide you have named appears under `source/articles/guides` using the current day's date. For example, `source/articles/guides/20XX-XX-XX-my-guide.html.md`.
 
 ## Adding Required Frontmatter
 
@@ -51,12 +39,16 @@ Open this file in a text editor and you will see the following:
 ```yaml
 ---
 
-title: Drawing simple shapes
+title: My Guide
 date: 2017-12-11 06:44 UTC
-tags: graphics,window
+tags: tag1,tag2
 
 ---
 ```
+
+<div class="alert alert-warning">
+  <strong>Note:</strong> All tags should be in lowercase.
+</div>
 
 The data separated by the three dashes (`---`) is known as the _frontmatter_ of the guide. This contains metadata about the guide, which (by default) includes the guide name, date created, and associated tags.
 
@@ -69,15 +61,11 @@ The data separated by the three dashes (`---`) is known as the _frontmatter_ of 
     </li>
     <li>
       <strong><code>author_url</code></strong>:
-      a URL to your GitHub profile or personal website,
+      a URL to your GitHub profile or personal website, and
     </li>
     <li>
       <strong><code>summary</code></strong>:
-      a summary of the guide that should be no more than two to three lines and should embody the gist of the guide,
-    </li>
-    <li>
-      <strong><code>related_funcs</code></strong>:
-      a list of related functions in snake_case.
+      a summary of the guide that should be no more than two to three lines and should embody the gist of the guide.
     </li>
   </ul>
   <strong>If you do not do this you may break the API documentation generation!</strong>
@@ -88,27 +76,17 @@ We suggest you copy and paste the following example to add it to the frontmatter
 ```yaml
 ---
 
-title: Drawing simple shapes
+title: My Guide
 date: 2017-12-11 06:44 UTC
-tags: graphics,window
+tags: tag1,tag2
 author: Fred Smith
 author_url: http://github.com/fsmith
 summary: |
-  This guide discusses how you can open a window to draw some simple
-  shapes in order to start playing around with graphics in SplashKit.
-related_funcs:
-  - create_window
-  - draw_rectangle
-  - refresh_screen
-  - clear_screen
+  This guide discusses how you can write a guide.
 
 ---
 
 ```
-
-If you are unsure what functions keys to use, refer to the C++ snake_case name in the website. For example, for the "Free Music" function:
-
-![Example of name to use for function](https://i.imgur.com/TiTmcd3.png)
 
 ## Write the guide
 
@@ -138,18 +116,16 @@ Now, visit [`http://localhost:4567`](http://localhost:4567) to see the website.
 
 Run through the following checklist to make sure:
 
-1. that you can navigate to the guides and see your guide your guide indexed in the _right_ API groups that you tagged your guide under,
-2. make sure it all looks good (i.e., no visual errors),
-3. make sure that relevant API function links appear under the respective functions in the API documentation. For example, if you wrote a `json`-tagged guide related to the `create_json` function, you would want to see the guides appear under the JSON API docs and the respective function:
-    ![JSON Guide Home](https://i.imgur.com/cPKwNgx.png)
-    ![JSON Guide Function](https://i.imgur.com/KNhJIJn.png)
+1. that you can navigate to the guides and see your guide your guide indexed in the _right_ tag group that you tagged your guide under,
+2. make sure it all looks good (i.e., no visual errors), and
+3. make sure the spelling is correct. (You may want to run your guide through a spellchecker).
 
-## Merging your guides into the SplashKit website
+## Merging your guides into the MyProject website
 
-If it's all looking good, it's time to submit a "pull request" so that a core member of the SplashKit team can review your proposed guide and get it published.
+If it's all looking good, it's time to submit a "pull request" so that a core member of the MyProject team can review your proposed guide and get it published.
 
-To do this, push your changes via GitHub, and visit the GitHub webiste for your fork. View this [GitHub tutorial](https://help.github.com/guides/creating-a-pull-request/) for more details on how to do this. A member of the SplashKit team will view your guide, give feedback, and otherwise make sure everything looks good. Finally, they will then publish your guide!
+To do this, push your changes via GitHub, and visit the GitHub webiste for your fork. View this [GitHub tutorial](https://help.github.com/guides/creating-a-pull-request/) for more details on how to do this. A member of the MyProject team will view your guide, give feedback, and otherwise make sure everything looks good. Finally, they will then publish your guide!
 
-SplashKit is completely open source, and free to use &mdash; any contributions to the project are appreciated!
+MyProject is completely open source, and free to use &mdash; any contributions to the project are appreciated!
 
 If at any stage of this process you run into any issues, feel free to raise an issue on GitHub.

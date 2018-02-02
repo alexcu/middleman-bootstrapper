@@ -2,7 +2,9 @@
 $grey-bg: #fafafa;
 $grey-border-color: #e6e6e6;
 
-// SplashKit colors
-$splashkit-yellow: #A7FFEB;
-$splashkit-blue:   #1E88E5;
-$splashkit-aqua:   #60AABF;
+// My project colors
+$mp-color-highlight: #82B1FF;
+$mp-color-primary: #1E88E5;
+$mp-color-secondary: #0D47A1;
+$mp-color-bg-dark: $mp-color-primary;
+$mp-color-bg-light: lighten($mp-color-primary, 25%);

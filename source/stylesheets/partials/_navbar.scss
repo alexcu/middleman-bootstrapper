@@ -1,10 +1,10 @@
-body > nav.navbar.sk-navbar {
+body > nav.navbar.mp-navbar {
   $bg-color: darken(#1565C0, 3%);
   background: $bg-color;
   border-radius: 0;
   box-shadow: 0px 0px 3px $bg-color;
   .navbar-brand {
-    color: lighten($splashkit-yellow, 7%);
+    color: lighten($mp-color-highlight, 7%);
     font-weight: 500;
     float: none;
     @include media-breakpoint-up(md) {
@@ -13,10 +13,10 @@ body > nav.navbar.sk-navbar {
   }
   .navbar-toggler {
     color: #fff;
-    i.sk-navbar-toggler-icon {
+    i.mp-navbar-toggler-icon {
       @extend .fa-times;
     }
-    &.collapsed i.sk-navbar-toggler-icon {
+    &.collapsed i.mp-navbar-toggler-icon {
       @extend .fa-bars;
     }
   }
@@ -24,7 +24,7 @@ body > nav.navbar.sk-navbar {
     .nav-item.dropdown {
       cursor: pointer;
     }
-    .sk-api-menu {
+    .mp-nav-menu {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
       @include media-breakpoint-down(sm) {
@@ -33,7 +33,7 @@ body > nav.navbar.sk-navbar {
         overflow: scroll;
       }
     }
-    .sk-api-menu a {
+    .mp-nav-menu a {
       color: $link-color;
       &:hover {
         color: $link-hover-color;

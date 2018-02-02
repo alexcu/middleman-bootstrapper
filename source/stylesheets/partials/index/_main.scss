@@ -1,15 +1,15 @@
 body.index > main {
-  background: linear-gradient(to bottom right, #1E88E5, #1565C0);
+  background: linear-gradient(to bottom right, $mp-color-bg-dark, $mp-color-bg-light);
   padding: 80px 0;
   color: white;
   text-align: center;
   display: flex;
   align-items: center;
-  .sk-logo {
-    width: 10px * $sk-logo-aspect-ratio-w;
-    height: 10px * $sk-logo-aspect-ratio-h;
+  .mp-logo {
+    width: 10px * $mp-logo-aspect-ratio-w;
+    height: 10px * $mp-logo-aspect-ratio-h;
   }
-  .sk-logo, p.lead, pre.sk-install-script {
+  .mp-logo, p.lead, pre.mp-leadline-script {
     margin: 0 auto 30px;
     display: block;
   }
@@ -17,7 +17,7 @@ body.index > main {
     font-weight: 300;
     font-size: 1.5em;
   }
-  .sk-install {
+  .mp-leadline {
     p {
       font-weight: 300;
       strong, a {
@@ -28,17 +28,17 @@ body.index > main {
       }
     }
   }
-  .sk-install pre.sk-install-script {
+  .mp-leadline pre.mp-leadline-script {
     background-color: #fff;
     padding: 1.5em;
     border-radius: 0.25em;
     transition: background-color ease-in 0.15s;
     &:hover {
-      background-color: $splashkit-yellow;
+      background-color: $mp-color-highlight;
       cursor: pointer;
     }
     &::selection {
-      background-color: darken($splashkit-yellow, 30%);
+      background-color: darken($mp-color-highlight, 30%);
       color: #fff;
     }
   }
@@ -47,7 +47,7 @@ body.index > main {
     margin-left: auto;
     margin-right: auto;
   }
-  .sk-install ul.sk-install-packages {
+  .mp-leadline ul.mp-leadline-packages {
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -69,10 +69,10 @@ body.index > main {
       }
       a {
         font-weight: 500;
-        color: $splashkit-yellow;
+        color: $mp-color-highlight;
       }
       a:hover {
-        color: $splashkit-aqua;
+        color: $mp-color-secondary;
         text-decoration: none;
       }
       i {

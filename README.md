@@ -1,6 +1,6 @@
-# Maestro Website
+# Middleman Project Bootstrapper Website
 
-Website for Maestro, hosted via GitHub pages
+A bootstrapper for generating simple Middleman websites.
 
 ## Getting started
 
@@ -29,6 +29,21 @@ config to point to this install:
 $ brew install openssl
 $ bundle config build.eventmachine --with-cppflags="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib"
 ```
+
+## Changing MyProject to Your Project
+
+Under a text editor of your choice, do a search and replace for `MyProject`. These are references for where you will need to replace MyProject to relevant content of your choice. The main pieces of data that need to ne changed are:
+
+1. `data/global/footer.yml`
+1. `data/landing_page.yml`
+1. `source/layouts/index.html.erb`
+1. `source/partials/_navbar.html.erb`
+1. `source/articles/contributing/index.html.md.erb`
+1. `source/articles/index.html.erb`
+1. `source/articles/installation/{mac,ubuntu,windows}/index.html.erb`
+1. `source/CNAME`
+
+You can also change theme colors and typography under `stylesheets/modules/_{colors,typography}.scss`.
 
 ## Developing
 

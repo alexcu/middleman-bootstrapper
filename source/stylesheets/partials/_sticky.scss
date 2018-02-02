@@ -1,4 +1,4 @@
-.sk-sticky-sidebar {
+.mp-sticky-sidebar {
   @include media-breakpoint-up(md) {
     position: -webkit-sticky;
     position: sticky;
@@ -8,8 +8,8 @@
     overflow-x: hidden;
   }
 }
-.sk-sticky-sidebar:before,
-.sk-sticky-sidebar:after {
+.mp-sticky-sidebar:before,
+.mp-sticky-sidebar:after {
     content: '';
     display: table;
 }

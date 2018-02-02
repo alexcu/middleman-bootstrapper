@@ -1,11 +1,11 @@
 <% wrap_layout :index do %>
   <%= partial 'partials/page_header', locals: { title: name, brief: brief } %>
-  <div class="sk-api-root container">
+  <div class="mp-api-root container">
     <div class="row">
-      <aside class="sk-sidebar sk-sticky-sidebar">
+      <aside class="mp-sidebar mp-sticky-sidebar">
         <%= partial 'partials/api/nav' %>
       </aside>
-      <article class="sk-content">
+      <article class="mp-content">
         <%= yield %>
       </article>
     </div>

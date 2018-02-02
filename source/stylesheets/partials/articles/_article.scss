@@ -2,12 +2,12 @@ body.articles main#content .container {
   margin-top: 3.5rem;
 }
 
-.sk-article + .sk-sidebar {
+.mp-article + .mp-sidebar {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.sk-article:first-child {
+.mp-article:first-child {
   margin: 4rem auto 2.5em;
 
   @include media-breakpoint-down(sm) {
@@ -16,20 +16,20 @@ body.articles main#content .container {
   }
 }
 
-.sk-article img {
+.mp-article img {
   @extend .img-thumbnail;
 }
 
-.sk-text-center {
+.mp-text-center {
   text-align: center;
 }
 
-.sk-article-nav-root {
+.mp-article-nav-root {
   // Just use the API nav root style
-  @extend .sk-api-nav-root;
+  @extend .mp-nav-root;
 }
 
-a.sk-article-link {
+a.mp-article-link {
   color: unset;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -40,14 +40,14 @@ a.sk-article-link {
   &:hover {
     text-decoration: none;
     background-color: $gray-lightest;
-    span.sk-read-more {
+    span.mp-read-more {
       color: $link-hover-color;
     }
   }
   p {
     font-size: 0.9rem;
   }
-  span.sk-read-more {
+  span.mp-read-more {
     color: $link-color;
   }
 }

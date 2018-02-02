@@ -1,8 +1,8 @@
 $footer-color:            #ccc;
 $footer-background-color: #312f31;
 
-body > footer.sk-footer {
-  padding: 4rem 0;
+body > footer.mp-footer {
+  padding: 2rem 0 4rem 0;
   font-size: 85%;
   color: $footer-color;
   background-color: $footer-background-color;
@@ -15,7 +15,7 @@ body > footer.sk-footer {
     color: #fff;
     font-weight: 500;
   }
-  ul.sk-footer-links {
+  ul.mp-footer-links {
     padding-left: 0;
     margin-bottom: 1rem;
     li {

@@ -1,4 +1,4 @@
-aside.sk-sidebar {
+aside.mp-sidebar {
   @include media-breakpoint-down(xs) {
     @include make-col(12);
     padding: 2rem;
@@ -22,7 +22,7 @@ aside.sk-sidebar {
     padding-left: 2rem;
   }
 }
-article.sk-content {
+article.mp-content {
   @include media-breakpoint-down(xs) {
     @include make-col(12);
     padding: 2rem;
