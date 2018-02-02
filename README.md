@@ -45,7 +45,6 @@ Under a text editor of your choice, do a search and replace for `MyProject`. The
 1. `source/articles/contributing/index.html.md.erb`
 1. `source/articles/index.html.erb`
 1. `source/articles/installation/{mac,ubuntu,windows}/index.html.erb`
-1. `source/CNAME`
 
 You can also change theme colors and typography under `stylesheets/modules/_{colors,typography}.scss`.
 
@@ -80,7 +79,7 @@ If this fails, try rebuilding the build folder from scratch then redeploy:
 
 ```bash
 $ rm -rf build
-$ rake deploy
+$ rake publish
 ```
 
 ## License
