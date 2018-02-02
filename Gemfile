@@ -27,7 +27,7 @@ gem 'middleman-sprockets', '4.0.0'
 gem 'middleman-blog', '~> 4.0'
 
 # Boostrap as SASS
-gem 'bootstrap', '~> 4.0.0.alpha4'
+gem 'bootstrap', '4.0.0.alpha4'
 gem 'rails-assets-tether', '>= 1.1.0'
 gem 'sass', '3.4.19'
 

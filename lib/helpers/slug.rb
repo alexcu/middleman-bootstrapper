@@ -13,22 +13,6 @@ class SlugRegistry < Hash
 end
 
 #
-# Registers all slugs... should be called once
-#
-def register_all_slugs
-  if SlugRegistry.instance.all_registered?
-    # puts 'Cannot call register_all_slugs twice'
-    return
-  end
-  data.api.each do |api_group, data|
-    (data.functions + data.typedefs + data.structs + data.enums + data.defines).each do |data|
-      register_slug(data, api_group)
-    end
-  end
-  SlugRegistry.instance.register_complete
-end
-
-#
 # Generates a unique slug (i.e., id name) for something
 #
 def register_slug(data, group)

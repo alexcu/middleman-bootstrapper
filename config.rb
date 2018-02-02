@@ -88,25 +88,3 @@ page '/articles/guides/tags/*', layout: :'articles/guides'
 page '/articles/guides/tags/**/*', layout: :'articles/guides'
 page '/articles/contributing/*', layout: :'articles/index'
 page '/articles/index.html', layout: :'articles/index'
-
-# API proxy pages
-data.api.each do |api_group, data|
-  name = api_group.to_human_case
-  types = (data.typedefs + data.structs + data.enums).sort_by { |h| h[:name] }
-  locals = {
-    raw_api_data: data,
-    api_group: api_group,
-    name: name,
-    types: types,
-    functions: data.functions,
-    defines: data.defines,
-    description: data.description,
-    brief: data.brief
-  }
-  proxy_url = "#{path_for_group(api_group)}/index.html"
-  proxy proxy_url,
-        '/api/template.html',
-        locals: locals,
-        ignore: true,
-        layout: :'api/index'
-end

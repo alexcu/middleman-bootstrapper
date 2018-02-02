@@ -1,6 +1,6 @@
-# SplashKit Website
+# Maestro Website
 
-Website for SplashKit SDK, hosted via GitHub pages
+Website for Maestro, hosted via GitHub pages
 
 ## Getting started
 
