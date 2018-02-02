@@ -1,6 +1,6 @@
 # Middleman Project Bootstrapper Website
 
-A bootstrapper for generating simple Middleman websites.
+A bootstrapper for generating basic, static Middleman websites
 
 ## Getting started
 
@@ -59,6 +59,10 @@ Your website will be watched and hosted locally at **[http://localhost:4567/](ht
 
 We currently rely on a [Ruby Bootstrap gem](https://github.com/twbs/bootstrap-rubygem/tree/v4.0.0.alpha4) compiled with Bootstrap 4.0.0-alpha4.
 Relevant SASS files can be found [here](https://github.com/twbs/bootstrap-rubygem/tree/v4.0.0.alpha4/assets/stylesheets).
+
+## Disclaimer
+
+This bootstrapper was generalised from the [SplashKit](https://github.com/splashkit/splashkit.io) website. There may be some files lurking around that still reference SplashKit-specific details. You can ignore these.
 
 ## Publishing
 
