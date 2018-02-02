@@ -4,8 +4,6 @@ A bootstrapper for generating basic, static Middleman websites.
 
 ![Sample Website](https://i.imgur.com/OLwEw2G.png)
 
-Demo can be found [here](http://alexcu.github.io/middleman-bootstrapper).
-
 ## Getting started
 
 Start by ensuring you have ruby on your system. You **must** install [rbenv](https://github.com/rbenv/rbenv) to keep your ruby versions under control. Refer to rbenv's [installation guide](https://github.com/rbenv/rbenv#installation) on how to do so.
