@@ -77,4 +77,4 @@ $ rake deploy
 
 ## License
 
-Coming soon
+Licensed under the MIT Licence.
